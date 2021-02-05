@@ -2,45 +2,48 @@
 
 namespace OOP_Introduction
 {
-  class Person
-  {
-    public string firstName;
-    public string lastName;
-    public DateTime DateOfBirth { get; set; }
+    class Person
+    {
+        public string firstName;
+        public string lastName;
 
-    // class variables as properties
-    //public string firstName { get; set; }
+        public string salutation { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public Student student { get; set; }
+
+        // class variables as properties
+        //public string firstName { get; set; }
 
         // static variables
         public static string salutationMr = "Mr";
 
-    /// <summary>
-    /// Method to return the person's name
-    ///   in a printable version
-    /// </summary>
-    /// <returns>Person's full name</returns>
-    string getName()
-    {
-      return firstName + " " + lastName;
-    }
+        /// <summary>
+        /// Method to return the person's name
+        ///   in a printable version
+        /// </summary>
+        /// <returns>Person's full name</returns>
+        string getName()
+        {
+            return firstName + " " + lastName;
+        }
 
-    /// <summary>
-    /// Default constructor
-    /// </summary>
+        /// <summary>
+        /// Default constructor
+        /// </summary>
 
-    public Person()
-    {
-      firstName = "John";
-      lastName = "Doe";
-    }
+        public Person()
+        {
+            firstName = "John";
+            lastName = "Doe";
+        }
 
-    /// <summary>
-    /// A simple parametrized constructor
-    /// </summary>
-    /// <param name="lname">last name of the person</param>
-    public Person(string lname)
-    {
-      lastName = lname;
+        /// <summary>
+        /// A simple parametrized constructor
+        /// </summary>
+        /// <param name="lname">last name of the person</param>
+        public Person(string lname)
+        {
+            lastName = lname;
+        }
     }
-  }
 }
