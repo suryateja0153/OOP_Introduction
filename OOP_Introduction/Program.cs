@@ -10,8 +10,11 @@ namespace OOP_Introduction
       Person Student = new Person
       {
         firstName = "John",
-        lastName = "Doe"
+        lastName = "Doe",
+        DateOfBirth = new System.DateTime(2021, 2, 5)
       };
+
+      Debug.WriteLine(Student.firstName);
 
       // after fixing access permissions
       //Debug.WriteLine(Student.getName());

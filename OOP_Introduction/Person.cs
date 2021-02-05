@@ -4,14 +4,15 @@ namespace OOP_Introduction
 {
   class Person
   {
-    string firstName;
-    string lastName;
+    public string firstName;
+    public string lastName;
+    public DateTime DateOfBirth { get; set; }
 
     // class variables as properties
     //public string firstName { get; set; }
 
-    // static variables
-    public static string salutationMr = "Mr";
+        // static variables
+        public static string salutationMr = "Mr";
 
     /// <summary>
     /// Method to return the person's name
@@ -26,6 +27,7 @@ namespace OOP_Introduction
     /// <summary>
     /// Default constructor
     /// </summary>
+
     public Person()
     {
       firstName = "John";
